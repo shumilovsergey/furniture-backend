@@ -73,7 +73,7 @@ async def handle_update(request: Request):
     chat_id = chat.get("id")
 
     if text == "/start" and chat_id:
-        send_message(chat_id, "Привет! На связи BELSI Kids. У нас есть широкий выбор стильной и безопасной мебели для детей ДОУ и школьных учреждений.")
+        send_message(chat_id, "Привет! На связи BELSI Kids. У нас есть широкий выбор стильной и безопасной мебели для детей ДОУ и школьных учреждений согласно СанПин.")
     return {"ok": True}
 
 def send_message(chat_id: int, text: str):
